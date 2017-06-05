@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Vasan Shop Checkout</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <style media="screen">
+          body{
+            background-color: lightblue;
+          }
+        </style>
+    </head>
+    <body style="font-family: 'Open Sans', sans-serif;">
+      <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Register.html">Registration</a></li>
+              <li><a href="Login.html">login</a></li>
+              <li><a href="userProfile.html">User Profile</a></li>
+              <li  class="active"><a href="cart.html">Shoping cart</a></li>
+              <li><a href="payment.html">Payment</a></li>
+              <li><a href="#contact">Logout</a></li>
+
+            </ul>
+          </div><!-- /.nav-collapse -->
+        </div><!-- /.container -->
+      </nav>
+        <div class="container">
+        <div class="centered title"><h1>Welcome to our checkout.</h1></div>
+     </div>
+     <hr class="featurette-divider"></hr>
+         <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                <div class="tab-content">
+  <div id="stripe" class="tab-pane fade in active">
+    <br>
+          <div class='form-row'>
+              <div class='form-group required'>
+                <div class='error form-group hide'>
+            </div>
+                <label class='control-label'>Name on Card</label>
+                <input class='form-control' size='4' type='text'>
+              </div>
+
+            </div>
+            <div class='form-row'>
+              <div class='form-group card required'>
+                  <label class='control-label'>Card Number</label>
+                <input autocomplete='off' class='form-control card-number' size='20' type='text'>
+              </div>
+            </div>
+             <div class='form-row'>
+              <div class='form-group card required'>
+                <label class='control-label'>Billing Address</label>
+                <input autocomplete='off' class='form-control' size='20' type='text'>
+              </div>
+            </div>
+            <div class='form-row'>
+              <div class='form-group expiration required'>
+                <label class='control-label'>Expiration</label>
+                <input class='form-control card-expiry-month' placeholder='MM' size='2' type='text'>
+              </div>
+              <div class='form-group expiration required'>
+                <label class='control-label'>Year</label>
+                <input class='form-control card-expiry-year' placeholder='YYYY' size='4' type='text'>
+              </div>
+            </div>
+
+
+            <div class='form-row'>
+              <div class='form-group'>
+                         <label class='control-label'></label>
+
+               <button class='form-control btn btn-primary' type='submit'> Make Payment !</button>
+
+              </form>
+
+              </div>
+            </div>
+
+              </div>
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="col-sm-6">
+           <label class='control-label'></label><!-- spacing -->
+
+          <div class="alert alert-info">Please choose your method of payment and hit continue. You will then be sent down to pay using your selected payment option.</div>
+      </body>
+</html>
