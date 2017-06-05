@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="RegLogin.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+  </head>
+  <style media="screen">
+    body{
+      background-color: lightblue;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Vasan stores</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li  class="active"><a href="Register.html">Registration</a></li>
+            <li><a href="Login.html">login</a></li>
+            <li><a href="userProfile.html">User Profile</a></li>
+            <li><a href="cart.html">Shoping cart</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="#contact">Logout</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+        <div class="centered">
+        <div id="logbox">
+          <form id="signup" method="post" action="/signup">
+            <h1>create an account</h1>
+            <input name="user[name]" type="text" placeholder="What's your username?" pattern="^[\w]{3,16}$" autofocus="autofocus" required="required" class="input pass"/>
+            <input name="user[password]" type="password" placeholder="Choose a password" required="required" class="input pass"/>
+            <input name="user[password2]" type="password" placeholder="Confirm password" required="required" class="input pass"/>
+            <input name="user[email]" type="email" placeholder="Email address" class="input pass"/>
+            <input type="submit" value="Sign me up!" class="inputButton"/>
+            <div class="text-center">
+                already have an account? <a href="#" id="login_id">login</a>
+            </div>
+          </form>
+        </div>
+       </div>
+  </body>
+</html>

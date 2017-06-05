@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+  </head>
+  <body style="background-color: lightblue;">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Vasan stores</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Register.html">Registration</a></li>
+            <li><a href="Login.html">login</a></li>
+            <li><a href="userProfile.html">User Profile</a></li>
+            <li  class="active"><a href="cart.html">Shoping cart</a></li>
+            <li><a href="payment.html">Payment</a></li>
+            <li><a href="#contact">Logout</a></li>
+
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container" style="padding-top:70px;">
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-md-offset-1"  >
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th class="text-center">Price</th>
+                            <th class="text-center">Total</th>
+                            <th> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-sm-8 col-md-6">
+                            <div class="media">
+                                <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="#">WarCry</a></h4>
+                                    <h5 class="media-heading"> by <a href="#">vasan Outler</a></h5>
+                                    <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                                </div>
+                            </div></td>
+                            <td class="col-sm-1 col-md-1" style="text-align: center">
+                            <input type="email" class="form-control" id="exampleInputEmail1" value="3">
+                            </td>
+                            <td class="col-sm-1 col-md-1 text-center"><strong>Rs.340</strong></td>
+                            <td class="col-sm-1 col-md-1 text-center"><strong>Rs.1020</strong></td>
+                            <td class="col-sm-1 col-md-1">
+                            <button type="button" class="btn btn-danger">
+                                <span class="glyphicon glyphicon-remove"></span> Remove
+                            </button></td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-6">
+                            <div class="media">
+                                <a class="thumbnail pull-left" href="#"> <img class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="#">FastFive</a></h4>
+                                    <h5 class="media-heading"> by <a href="#">Bookstore</a></h5>
+                                    <span>Status: </span><span class="text-warning"><strong>Leaves warehouse in 2 - 3 weeks</strong></span>
+                                </div>
+                            </div></td>
+                            <td class="col-md-1" style="text-align: center">
+                            <input type="email" class="form-control" id="exampleInputEmail1" value="2">
+                            </td>
+                            <td class="col-md-1 text-center"><strong>Rs.230</strong></td>
+                            <td class="col-md-1 text-center"><strong>Rs.460</strong></td>
+                            <td class="col-md-1">
+                            <button type="button" class="btn btn-danger">
+                                <span class="glyphicon glyphicon-remove"></span> Remove
+                            </button></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>   </td>
+                            <td><h5>Subtotal<br>Estimated shipping</h5><h3>Total</h3></td>
+                            <td class="text-right"><h5><strong>Rs.1480<br>Rs.50</strong></h5><h3>Rs.1530</h3></td>
+                        </tr>
+                        <tr>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>   </td>
+                            <td>
+                            <button type="button" class="btn btn-default">
+                                Continue Shopping
+                            </button></td>
+                            <td>
+                            <button type="button" class="btn btn-success" onclick="window.location.href='payment.html'">
+                                Checkout
+                            </button>
+                          </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+  </body>
+</html>
